@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "The Facebook Hacker",
+  "description": "Change peoples stauses by custmomizing the DOM :)",
+  "version": "0.0",
+  "icons": { "16": "images/FBHlogo.png",
+           "48": "images/FBHlogo.png" },
+  "permissions": [
+    "tabs","<all_urls>"
+  ],
+  "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "images/FBHlogo-128.png"
+    },
+  "web_accessible_resources": [
+      "injected.js"
+  ],
+  "background":{
+      "scripts":["background.js"]
+  }
+}
